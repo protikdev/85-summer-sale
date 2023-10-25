@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f6e2;
+}
+.banner-section img {
+  width: 500px;
+}
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner-content h3 {
+  font-size: 1.5rem;
+}
+.banner-content h1 {
+  font-size: 3rem;
+  margin: 20px 0px;
+}
+.code {
+  font-size: 1.5rem;
+}
+.banner-content button {
+  background-color: #e527b2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
