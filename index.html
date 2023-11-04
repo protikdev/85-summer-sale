@@ -36,7 +36,7 @@
           <div>
             <h1>Kitchenware</h1>
             <div class="products">
-              <div class="product-elements">
+              <div class="product-elements" id="product1">
                 <img src="images/prod1.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
@@ -48,25 +48,25 @@
                 <p>K. Accessories</p>
                 <p>39.00 TK</p>
               </div>
-              <div class="product-elements">
+              <div class="product-elements" id="product2">
                 <img src="images/prod2.png" alt="" />
                 <div>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                 </div>
                 <p>K. Accessories</p>
                 <p>25.00 TK</p>
               </div>
-              <div class="product-elements">
+              <div class="product-elements" id="product3">
                 <img src="images/prod3.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                 </div>
 
@@ -78,31 +78,31 @@
           <div>
             <h1>Sportswear</h1>
             <div class="products">
-              <div class="product-elements">
+              <div class="product-elements" id="product4">
                 <img src="images/prod4.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                 </div>
                 <p>Sports Back Cap</p>
                 <p>49.00 TK</p>
               </div>
-              <div class="product-elements">
+              <div class="product-elements" id="product5">
                 <img src="images/prod5.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                 </div>
                 <p>Full Jersey Set</p>
                 <p>69.00 TK</p>
               </div>
-              <div class="product-elements">
+              <div class="product-elements" id="product6">
                 <img src="images/prod6.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
@@ -119,39 +119,39 @@
           <div>
             <h1>Furniture</h1>
             <div class="products">
-              <div class="product-elements">
+              <div class="product-elements" id="product7">
                 <img src="images/prod7.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                   <i class="fa-regular fa-star"></i>
                 </div>
                 <p>Single Relax Chair</p>
                 <p>185.00 TK</p>
               </div>
-              <div class="product-elements">
+              <div class="product-elements" id="product8">
                 <img src="images/prod8.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
 
                 <p>Children play</p>
                 <p>299.00 TK</p>
               </div>
-              <div class="product-elements">
+              <div class="product-elements" id="product9">
                 <img src="images/prod9.png" alt="" />
                 <div>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
                 <p>Flexible Sofa</p>
                 <p>339.00 TK</p>
@@ -163,23 +163,33 @@
           <div class="coupon-content">
             <h3>Have coupon?</h3>
             <div class="flex">
-              <input type="text" placeholder="Coupon code" />
-              <button>Apply</button>
+              <input id="coupon-code" type="text" />
+              <button id="coupon-btn">Apply</button>
             </div>
           </div>
-          <div class="price-content">
+          <div class="price-section">
             <p>1. Home Cooker</p>
             <p>2. Sports cates</p>
             <p>3. Home Cooker</p>
             <hr />
-            <p>Total price: 257.00TK</p>
-            <p>Discount : 51.40TK</p>
-            <p>Total: 205.60 TK</p>
+            <p id="total-price">Total price: 0.00TK</p>
+            <p id="discount">Discount : 0.00TK</p>
+            <p id="net-total">Total: 0.00 TK</p>
             <hr />
-            <button>Make Purchase</button>
+            <button id="make-purchase">Make Purchase</button>
           </div>
         </div>
       </section>
     </main>
+    <div id="purchase-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="images/congo.png" alt="" />
+        <h1>Congratulations</h1>
+        <p>Your Purchase the product!</p>
+        <button id="goHome">Go Home</button>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
